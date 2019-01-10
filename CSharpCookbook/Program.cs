@@ -10,20 +10,7 @@ namespace CSharpCookbook
     {
         static void Main(string[] args)
         {
-            Test test = new Test(10, "");
             Console.ReadLine();
-        }
-    }
-
-    struct Test
-    {
-        public int Age;
-        public string Name;
-
-        public Test(int age, string name)
-        {
-            Age = age;
-            Name = name;
         }
     }
 }

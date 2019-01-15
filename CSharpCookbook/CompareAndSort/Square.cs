@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpCookbook.Comparable
+namespace CSharpCookbook.CompareAndSort
 {
     public class Square : IComparable<Square>
     {
@@ -24,6 +24,31 @@ namespace CSharpCookbook.Comparable
         public int Width { get; set; }
 
         public override string ToString() => $"Heigth:{Height}，Width:{Width}，Square:{ Height * Width}";
+
+        public override bool Equals(object obj)
+        {
+            if(obj == null)
+            {
+                return false;
+            }
+
+            var other = obj as Square;
+            if(other == null)
+            {
+                return false;
+            }
+
+            return CompareTo(other) == 0;
+        }
+
+        /// <summary>
+        /// 重载 Equals 方法一定要重载 GetHashCode
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            return Height.GetHashCode() | Width.GetHashCode();
+        }
 
         public int CompareTo(Square other)
         {

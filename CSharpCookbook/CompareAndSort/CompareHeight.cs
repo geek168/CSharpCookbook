@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpCookbook.Comparable
+namespace CSharpCookbook.CompareAndSort
 {
     public class CompareHeight : IComparer<Square>
     {

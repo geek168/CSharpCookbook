@@ -26,16 +26,16 @@ namespace CSharpCookbook
 
             Console.WriteLine("-----------------");
 
-            SortedList<int, Square> sortlist = new SortedList<int, Square>()
+            SortedList<Square, int> sortlist = new SortedList<Square, int>()
             {
-                { 0, new Square(1,3) },
-                { 2, new Square(3,3) },
-                { 1, new Square(2,1) },
-                { 3, new Square(6,1) }
+                { new Square(1,3) , 0 },
+                { new Square(3,3) , 1 },
+                { new Square(2,1) , 2 },
+                { new Square(6,1) , 3 }
             };
             foreach(var s in sortlist)
             {
-                Console.WriteLine($"{s.Key} : {s.Value}");
+                Console.WriteLine($"{s.Value} : {s.Key}");
             }
 
             Console.WriteLine("-----------------");

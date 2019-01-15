@@ -25,8 +25,6 @@ namespace CSharpCookbook.Comparable
 
         public override string ToString() => $"Heigth:{Height}，Width:{Width}，Square:{ Height * Width}";
 
-        public override int GetHashCode() => Height.GetHashCode() | Width.GetHashCode();
-
         public int CompareTo(Square other)
         {
             int area = Width * Height;

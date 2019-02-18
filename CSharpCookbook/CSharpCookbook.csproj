@@ -48,6 +48,9 @@
     <Compile Include="CompareAndSort\SortSquare.cs" />
     <Compile Include="CompareAndSort\Square.cs" />
     <Compile Include="ConstAndReadOnly\ConstReadOnly.cs" />
+    <Compile Include="ICloneable\Company.cs" />
+    <Compile Include="ICloneable\IDeepCopy.cs" />
+    <Compile Include="ICloneable\IShallowCopy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

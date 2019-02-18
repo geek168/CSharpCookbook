@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CSharpCookbook.CompareAndSort;
 using CSharpCookbook.ConstAndReadOnly;
+using CSharpCookbook.ICloneable;
 
 namespace CSharpCookbook
 {
@@ -15,7 +16,10 @@ namespace CSharpCookbook
             //SortSquare.TestSort();
 
             //var v = new ConstReadOnly(300);
-            Console.WriteLine(ClassLibrary.Foo.x);
+            //Console.WriteLine(ClassLibrary.Foo.x);
+
+            CloneableTest cloneableTest = new CloneableTest();
+            cloneableTest.Test();
 
             Console.ReadLine();
         }
